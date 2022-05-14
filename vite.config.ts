@@ -122,9 +122,9 @@ export default defineConfig({
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
     // https://github.com/webfansplz/vite-plugin-vue-inspector
-    Inspector({
+    /*  Inspector({
       enabled: false,
-    }),
+    }), */
   ],
 
   // https://github.com/antfu/vite-ssg
