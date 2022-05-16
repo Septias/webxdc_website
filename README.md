@@ -1,5 +1,5 @@
 # Webxdc Website
-Repositiory of the [WebxDc website](https://www.webxdc.com/)
+Repository of the WebxDc [website](https://www.webxdc.com/)
 
 ## Development 
 install & run:
