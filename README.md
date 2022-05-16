@@ -2,7 +2,7 @@
 Repositiory of the [WebxDc website](https://www.webxdc.com/)
 
 ## Development 
-install & rune:
+install & run:
 ```
 npm install
 npm run dev
