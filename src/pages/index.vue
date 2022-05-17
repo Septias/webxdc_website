@@ -18,7 +18,7 @@ main
       div.flex.flex-col.flex-grow.py-5
         div.extra
           h3.text-2xl.mt-0 1. Use Version 1.30
-          p The newest deltachat-version is available for all mayor platforms.
+          p The newest deltachat version is available for all mayor platforms.
         div.extra
           h3.text-2xl 2. Develop your own rich content
           p We created a template for you to start developing cool & exiting apps rich content now
@@ -26,7 +26,7 @@ main
             a(href="")
         div.extra
           h3.text-2xl 3. Share your App
-          p Just drag and drop your bundled *.xdc file into a chat and publish it!
+          p Just drag and drop your bundled *.xdc file into a chat and share it!
 
     div.flex.items-center.justify-center.flex-grow(class="md:p-15")
       iframe#video.rounded.shadow-xl(src="https://www.youtube.com/embed/I1K4pBvb2pI" frameborder="0" allowfullscreen)
@@ -34,9 +34,9 @@ main
   div.h-screen.flex.justify-center
     div.p-2
       h2 Ressources
-      p We created documentation and many examples to got you onboard as easy as possible
+      p We created documentation and many examples to get you onboard as easy as possible
       h2 API
-      p You can finde the API-Documentation on our official &nbsp
+      p You can finde the API documentation on our official &nbsp
         a(href="https://github.com/deltachat/deltachat-core-rust/blob/master/draft/webxdc-dev-reference.md")
           | Github Repo
       p
