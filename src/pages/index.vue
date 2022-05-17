@@ -39,7 +39,7 @@ main
           p The newest deltachat version is available for all mayor platforms.
         div.extra
           h3.text-2xl 2. Develop your own rich content
-          p We created a template for you to start developing cool & exiting apps rich content now
+          p We created a template for you to start developing cool & exiting rich content now
           p There are also plenty of examples to get you started
             a(href="")
         div.extra
