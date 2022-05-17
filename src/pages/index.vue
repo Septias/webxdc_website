@@ -36,21 +36,29 @@ main
       h2 Ressources
       p We created documentation and many examples to get you onboard as easy as possible
       h2 API
-      p You can finde the API documentation on our official &nbsp
+      p You can finde the API documentation on our official
+        |
+        |
         a(href="https://github.com/deltachat/deltachat-core-rust/blob/master/draft/webxdc-dev-reference.md")
           | Github Repo
       p
-        | We have also written a &nbsp
+        | We have also written a
+        |
         span
           a(href="https://deltachat.github.io/webxdc_docs/") book
-        | &nbsp for a more thorough introduction
+        |
+        | for a more thorough introduction
       h2 Examples
-      p There are plenty of examples under the webxdc &nbsp
+      p There are plenty of examples under the webxdc
+        |
+        |
         a(href="https://github.com/webxdc") organisation
 
       h2 Getting Started
-      p To start right off you can clone our &nbsp
-        a(href="https://github.com/webxdc/webxdc-dev") boostrap-repo
+      p To start right off you can clone our
+        |
+        |
+        a(href="https://github.com/webxdc/webxdc-dev") boostrap repo
 </template>
 
 <style lang="sass">
