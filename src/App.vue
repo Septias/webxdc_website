@@ -5,7 +5,7 @@
 import { isDark } from '~/composables'
 
 useHead({
-  title: 'WebxDc',
+  title: 'webxcd',
   meta: [
     { name: 'description', content: 'Website to promote webxdc ' },
     {
