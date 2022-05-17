@@ -31,20 +31,21 @@ main
 
   div#explanation.flex.p-2.flex-wrap.relative(ref="down1")
     div.downbutton(i="carbon-arrow-down" @click="scrollSecond")
-    div.flex.flex-col.steps-width
-      h2.bold.mb-0.text-3xl Three simple steps:
-      div.flex.flex-col.flex-grow.py-5
-        div.extra
-          h3.text-2xl.mt-0 1. Use Version 1.30
-          p The newest deltachat version is available for all mayor platforms.
-        div.extra
-          h3.text-2xl 2. Develop your own rich content
-          p We created a template for you to start developing cool & exiting rich content now
-          p There are also plenty of examples to get you started
-            a(href="")
-        div.extra
-          h3.text-2xl 3. Share your App
-          p Just drag and drop your bundled *.xdc file into a chat and share it!
+    div.flex.flex-col.steps-width.justify-center
+      div
+        h2.bold.mb-0.text-3xl.ml-2 Three simple steps:
+        div.flex.flex-col.flex-grow.py-5
+          div.extra
+            h3.text-2xl.mt-0 1. Use Version 1.30
+            p The newest deltachat version is available for all mayor platforms.
+          div.extra
+            h3.text-2xl 2. Develop your own rich content
+            p We created a template for you to start developing cool & exiting rich content now
+            p There are also plenty of examples to get you started
+              a(href="")
+          div.extra
+            h3.text-2xl 3. Share your App
+            p Just drag and drop your bundled *.xdc file into a chat and share it!
 
     div.flex.items-center.justify-center.flex-grow(class="md:p-15")
       iframe#video.rounded.shadow-xl(src="https://www.youtube.com/embed/I1K4pBvb2pI" frameborder="0" allowfullscreen)
