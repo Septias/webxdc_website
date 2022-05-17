@@ -2,17 +2,35 @@
 
 </script>
 
+<script lang="ts" setup>
+const down1 = ref()
+const down2 = ref()
+function scrollFirst(a, b) {
+  down1.value.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  })
+}
+
+function scrollSecond(a, b) {
+  down2.value.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  })
+}
+</script>
+
 <template lang="pug">
 main
   h1.pl-5.absolute webxdc
   div.h-screen.flex.items-center.justify-center
-    div.absolute.text-3xl.bottom-0.right-0.mr-4.mb-5(i="carbon-arrow-down")
+    div.downbutton(i="carbon-arrow-down" @click="scrollFirst")
     div#banner.p-2.text-center.rainbow-box.rounded(class="md:p-10 md:m-2")
       h2 Bring messaging to a new level
       p.mb-0 webxdc is empowering developers to create rich interactive content using already known web-technologies and to share them with the world like never before
 
-  div#explanation.flex.p-2.flex-wrap.relative
-    div.absolute.text-3xl.bottom-0.right-0.mr-4.mb-5(i="carbon-arrow-down")
+  div#explanation.flex.p-2.flex-wrap.relative(ref="down1")
+    div.downbutton(i="carbon-arrow-down" @click="scrollSecond")
     div.flex.flex-col.steps-width
       h2.bold.mb-0.text-3xl Three simple steps:
       div.flex.flex-col.flex-grow.py-5
@@ -31,7 +49,7 @@ main
     div.flex.items-center.justify-center.flex-grow(class="md:p-15")
       iframe#video.rounded.shadow-xl(src="https://www.youtube.com/embed/I1K4pBvb2pI" frameborder="0" allowfullscreen)
 
-  div.h-screen.flex.justify-center
+  div.h-screen.flex.justify-center(ref="down2")
     div.p-2
       h2 Ressources
       p We created documentation and many examples to get you onboard as easy as possible
@@ -70,10 +88,15 @@ main
 #banner
   width: 40%
 
+.downbutton
+  transition: all 0.3s ease
+  @apply absolute text-3xl bottom-0 right-0 mr-4 mb-5 hover:text-4xl cursor-pointer
+
 @media screen and (max-width: 400px)
   #banner
     width: 100%
     @apply m-2
+
 .steps-width
   width: 40%
   p
