@@ -4,12 +4,12 @@
 
 <template lang="pug">
 main
-  h1.pl-5.absolute WebxDc
+  h1.pl-5.absolute webxdc
   div.h-screen.flex.items-center.justify-center
     div.absolute.text-3xl.bottom-0.right-0.mr-4.mb-5(i="carbon-arrow-down")
-    div.p-10.custom-width.text-center.rainbow-box.rounded
+    div#banner.p-2.text-center.rainbow-box.rounded(class="md:p-10 md:m-2")
       h2 Bring messaging to a new level
-      p.mb-0 WebxDc is empowering developers to create apps using already known web-technologies and to share them with the world like never before
+      p.mb-0 webxdc is empowering developers to create rich interactive content using already known web-technologies and to share them with the world like never before
 
   div#explanation.flex.p-2.flex-wrap.relative
     div.absolute.text-3xl.bottom-0.right-0.mr-4.mb-5(i="carbon-arrow-down")
@@ -20,8 +20,8 @@ main
           h3.text-2xl.mt-0 1. Use Version 1.30
           p The newest deltachat-version is available for all mayor platforms.
         div.extra
-          h3.text-2xl 2. Develop your game
-          p We created a template for you to start developing cool & exiting apps right now
+          h3.text-2xl 2. Develop your own rich content
+          p We created a template for you to start developing cool & exiting apps rich content now
           p There are also plenty of examples to get you started
             a(href="")
         div.extra
@@ -29,10 +29,10 @@ main
           p Just drag and drop your bundled *.xdc file into a chat and publish it!
 
     div.flex.items-center.justify-center.flex-grow(class="md:p-15")
-      iframe#video.rounded.shadow-xl(src="https://www.youtube.com/embed/8LbrGXKZN70" frameborder="0" allowfullscreen)
+      iframe#video.rounded.shadow-xl(src="https://www.youtube.com/embed/I1K4pBvb2pI" frameborder="0" allowfullscreen)
 
   div.h-screen.flex.justify-center
-    div
+    div.p-2
       h2 Ressources
       p We created documentation and many examples to got you onboard as easy as possible
       h2 API
@@ -59,10 +59,13 @@ main
   --color-light: #9ACE99
   --accent: #0a2e1b
 
-.custom-width
+#banner
   width: 40%
-  min-width: 300px
 
+@media screen and (max-width: 400px)
+  #banner
+    width: 100%
+    @apply m-2
 .steps-width
   width: 40%
   p
@@ -93,5 +96,4 @@ main
   border: 5px solid transparent
   border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%)
   border-image-slice: 1
-  margin: 20px auto
 </style>
