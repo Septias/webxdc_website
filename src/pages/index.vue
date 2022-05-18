@@ -1,18 +1,14 @@
-<script setup lang="ts">
-
-</script>
-
 <script lang="ts" setup>
 const down1 = ref()
 const down2 = ref()
-function scrollFirst(a, b) {
+function scrollFirst() {
   down1.value.scrollIntoView({
     behavior: 'smooth',
     block: 'start',
   })
 }
 
-function scrollSecond(a, b) {
+function scrollSecond() {
   down2.value.scrollIntoView({
     behavior: 'smooth',
     block: 'start',
@@ -64,7 +60,7 @@ main
     div.flex.items-center.justify-center.flex-grow(class="md:p-15")
       iframe#video.rounded.shadow-xl(src="https://www.youtube.com/embed/I1K4pBvb2pI" frameborder="0" allowfullscreen)
 
-  div.h-screen.flex.justify-center(ref="down2")
+  #ressources.flex.items-center.m-15.flex-col(ref="down2")
     div.p-2
       h2 Ressources
       p We created documentation and many examples to get you startd as easily as possible.
@@ -79,17 +75,22 @@ main
         |
         a(href="https://deltachat.github.io/webxdc_docs/") book
 
-      h2 Examples
-      p There are plenty of examples under the webxdc
-        |
-        |
-        a(href="https://github.com/webxdc") organisation.
-
       h2 Getting Started
       p Start right off by cloning our
         |
         |
         a(href="https://github.com/webxdc/webxdc-dev") boostrap repo.
+
+      h2 Examples
+      p.mb-0 There are plenty of examples under the webxdc
+        |
+        |
+        a(href="https://github.com/webxdc") organisation.
+
+    div#examples.rounded-xl.flex.flex-wrap.p-5.border-box.pt-0(class="md:flex-nowrap")
+      ExamplePicture(image="editor.png" text="Editor" href="https://github.com/webxdc/yjs_editor")
+      ExamplePicture(image="lumberjack.png" text="Lumberjack clone")
+      ExamplePicture(image="snake.png" text="Snake clone")
 </template>
 
 <style lang="sass">
@@ -132,6 +133,12 @@ main
   h3
     color: var(--accent)
     margin-top: 0px
+
+#ressources
+  min-height: 100vh
+
+#examples
+  max-width: 655px
 
 .rainbow-box
   border: 5px solid transparent
