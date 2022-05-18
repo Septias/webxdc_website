@@ -6,11 +6,14 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #181a1b;
+  color:white;
 }
 
-html.dark {
-  //background: #121212;
+a {
+  color: rgb(42 105 209)
 }
+
 
 #nprogress {
   pointer-events: none;

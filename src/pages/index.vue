@@ -124,11 +124,11 @@ main
   aspect-ratio: 16 / 10
 
 .modal
-  @apply shadow-xl border-rounded p-5 m-2 bg-white
+  @apply shadow-xl border-rounded p-5 m-2 bg-white text-black
 
 #explanation
   min-height: 100vh
-  background: #c0e1e9
+  background: rgb(15 39 78)
   h3
     color: var(--accent)
     margin-top: 0px
