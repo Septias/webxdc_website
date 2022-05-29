@@ -1,3 +1,5 @@
+[superseeded by https://github.com/webxdc/website]
+
 # Webxdc Website
 Repository of the WebxDc [website](https://www.webxdc.com/)
 
